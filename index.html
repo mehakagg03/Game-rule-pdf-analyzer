@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GAME Knowledge</title>
+</head>
+<body>
+  <h1>Ask Question about Games</h1>
+  <h2>LUDO, Snake & Ladders, Sequence, UNO</h2>
+  <form method="post">
+    <input type="text" name="query" placeholder="Ask your question here..." size="80" required>
+    <button type="submit">Submit</button>
+  </form>
+
+  {% if response %}
+    <h2>Response:</h2>
+    <p>{{ response }}</p>
+    <h3>Sources:</h3>
+    <ul>
+      {% for source in sources %}
+        <li>{{ source }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</body>
+</html>
