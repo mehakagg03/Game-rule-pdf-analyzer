@@ -7,4 +7,4 @@
 - 🧠 Ollama for local LLM inference and embeddings
 - 📦 ChromaDB for vector storage and similarity search
 - 🛠️ LangChain for orchestration
-- 🌐 Flask (optional) for a web interface
+- 🌐 Flask for a web interface
